@@ -1,0 +1,129 @@
+<!-- Ans by ChatGPT -->
+
+<!-- TryoutthefollowingeventsinEventListeneronyourown:-mouseout-keypress-Scroll-load -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            height: 2000px; /* Adding some height for scroll event demonstration */
+        }
+    </style>
+</head>
+<body>
+    <h2 id="output">Events will be logged here:</h2>
+
+    <script>
+        function logEvent(eventType) {
+            // Log the event type and a timestamp to the console
+            console.log(`Event Type: ${eventType} - Timestamp: ${new Date().toLocaleTimeString()}`);
+        }
+
+        // Mouseout event
+        document.getElementById('output').addEventListener('mouseout', function (event) {
+            logEvent('mouseout');
+        });
+
+        // Keypress event
+        document.addEventListener('keypress', function (event) {
+            logEvent('keypress');
+        });
+
+        // Scroll event
+        window.addEventListener('scroll', function (event) {
+            logEvent('scroll');
+        });
+
+        // Load event
+        window.addEventListener('load', function (event) {
+            logEvent('load');
+        });
+    </script>
+</body>
+</html> -->
+
+<!-- Qs2.CreateabuttononthepageusingJavaScript.Addaneventlistenertothebuttonthatchangesthebutton’scolortogreenwhenitisclicked. -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Color Change</title>
+    <style>
+        /* Some basic styling for the button */
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Button will be added here using JavaScript -->
+
+    <script>
+        // Function to change the button color to green
+        function changeButtonColor() {
+            // Get the button element
+            var button = document.getElementById('myButton');
+
+            // Change the button color to green
+            button.style.backgroundColor = 'green';
+        }
+
+        // Creating a button element dynamically
+        var buttonElement = document.createElement('button');
+        buttonElement.innerText = 'Click me to change color';
+        buttonElement.id = 'myButton';
+
+        // Adding the event listener to the button
+        buttonElement.addEventListener('click', changeButtonColor);
+
+        // Appending the button to the body of the document
+        document.body.appendChild(buttonElement);
+    </script>
+</body>
+</html> -->
+
+
+<!-- Qs3.Createaninputelementonthepagewithaplaceholder”enteryourname”andanH2headingonthepageinsideHTML.Thepurposeofthisinputelementistoenterauser’snamesoitshouldonlyinputlettersfroma-z,A-Zandspace(allothercharactersshouldnotbedetected).Whenevertheuserinputstheirname,theirinputshouldbedynamicallyvisibleinsidetheheading.[Pleasenotethatnoothercharacterapartfromtheallowedcharactersshouldbevisibleintheheading] -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Name Input</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="outputHeading">Enter Your Name</h2>
+    <input type="text" id="nameInput" placeholder="Enter your name" oninput="updateHeading()">
+    
+    <script>
+        function updateHeading() {
+            // Get the input value and filter out unwanted characters
+            let inputValue = document.getElementById('nameInput').value;
+            let filteredValue = inputValue.replace(/[^a-zA-Z ]/g, '');
+
+            // Update the heading with the filtered value
+            document.getElementById('outputHeading').innerText = filteredValue;
+        }
+    </script>
+</body>
+</html> -->
+
