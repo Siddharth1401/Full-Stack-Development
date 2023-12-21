@@ -1,0 +1,71 @@
+<!-- what action to take
+label: name and clickable name
+input: for different types of input
+button: different types
+Select: options with dropdown list 
+Textarea: for text feedback -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+    <form action="action"> 
+        <label for ="user">Enter your name: </label>
+        <input type="name" id="user" placeholder="Type your email Stupid Bastard" name="username">
+    </div>
+    <div>
+        <label for = "pass">Enter password</label>
+        <input type="password" id="pass" placeholder="Type password Stupid Bastard" name="password">
+    </div>
+    <button type="button">I m Gay</button>
+    <button type="reset">I m Gay</button>
+    <button type="submit">I m not Gay</button>
+    </form>
+    <hr>
+    <form action="https://www.google.com/search"> <!--action sends request from the input and name attribute -->
+        <input type="text" placeholder="search in google" name="q">
+        <button>Search</button>
+    </form>
+    <hr>
+
+    <form action="action">
+        <div>
+            <input type="radio" name="gender" id="gay" value="gay">
+            <label for="gay">Gay</label>
+            <input type="radio" name="gender" id="Pansexual" value="Pansexual">
+            <label for="Pansexual">Pansexual</label>
+            <input type="radio" name="gender" id="Walmart bag" value="Walmart bag">
+            <label for="Walmart bag">Walmart bag</label>
+        </div>
+        <br>
+        <br>
+        <div>
+            Choose your profession
+            <select name="hello" id="hello">
+                <option value="stud"> Student rawdawngger</option>
+                <option value="grad" selected> professional rawdawgger</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="gayness">How gay are you?</label>
+            <input type="range" id="gayness" min="0" max="100" name="gayness" step="1" value="69">
+        </div>
+        
+        <div>
+            <label for="feedback">Pls give feedback on this form</label>
+            <textarea id="feedback" name="feedback" placeholder="feedback"></textarea>
+        </div>
+
+        <button> Rabbit's hOle </button>
+    </form>
+
+
+
+</body>
+</html>
