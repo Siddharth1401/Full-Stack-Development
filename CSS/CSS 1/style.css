@@ -1,0 +1,23 @@
+h1 {
+    color: #ff00ff;
+    background-color: grey;
+    text-align: center;
+    font-weight: 400;
+    text-decoration: wavy maroon underline;
+    line-height: .5;
+    letter-spacing: 10px;
+    font-family: serif;
+}
+
+p {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: goldenrod
+}
+
+button {
+    color: aqua;
+    background: black;
+
+}
